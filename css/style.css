@@ -22,11 +22,12 @@ body{
 
 #header{
   width: 100%;
+  
   /* height: 100vh; */
   /* background-image: url(/assets/profileHNBG.JPG); */
-  background-size:cover;
+  /* background-size:cover;
   background-position:center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .container{
@@ -45,6 +46,7 @@ nav{
 
 .logo{
   width: 150px;
+  size: 200px;
 
 }
 
@@ -57,7 +59,7 @@ nav ul li{
 nav ul li a{
   color: var(--text-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -89,27 +91,53 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:30px;
+  /* gap:30px; */
 
 }
 
 
-bddbd
-.home-left{
-  flex-basis: 90%;
-}
+
+
 .header-text{
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  margin-left: 50px;
   flex-wrap: wrap;
-  grid-template: auto;
-  margin-top: 20px;
-  font-size: 30px;
+  grid-template:max-content;
+  margin-top: 2px;
+  font-size: 30px; */
+  padding: 2px 0;
 }
+
+.row-home{
+  display:flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap:wrap
+}
+
+.home-col-1{
+
+margin-left: 30px;
+font-size: 25px;
+}
+
+
+.home-col-2{
+
+}
+
+.home-col-2 img{
+  margin-right: 10px ;
+
+ width: 83%;
+  border-radius: 15px;
+}
+
  /* .profile{
-size: 700px;
-  margin-top: 50px;
+  margin-left: 200px;
+  
  } */
+
 
  .name{
   color: #FFCB47;
@@ -119,20 +147,27 @@ size: 700px;
 
  }
 
+
+
  .role{
   font-size: 80%;
   margin-left: 6px;
-  color: #b4b8b7;
+  color: var(--text-color)
 
  }
 .header-text h2{
-  /* font-size: 60px; */
-  margin-top: 200px;
+
+  margin-top: 170px;
+}
+
+form .btn.btn2{
+  color:#EBF2FA;
 }
 
 /* ---------About----------- */
 
 #about{
+  margin-top: 20px;
   padding: 85px 0;
   color: var(--text-color);
 }
@@ -157,6 +192,7 @@ size: 700px;
 .sub-title{
   font-size: 40px;
   font-weight: 600;
+
   color: var(--text-color);
 }
 
@@ -207,7 +243,9 @@ size: 700px;
 }
 
 
-/* --------Services----------- */
+/* --------Services---------,
+
+-- */
 
 #services{
   padding: 30px 0;
@@ -441,4 +479,18 @@ form .btn2{
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+/* -------------Media Queries---------- */
+
+@media only screen and (min-width: 60px ){
+
+
+.header-text{
+  margin-left: 100px;
+}
+
+.logo{
+width: 150px;
+}
 }
