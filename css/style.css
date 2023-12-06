@@ -6,7 +6,12 @@
   text-decoration: none;
   list-style: none;
 }
+html{
 
+ scroll-behavior: smooth;
+
+
+}
 :root{
 --bg-color: #083D77;
 --text-color: #EBF2FA;
@@ -117,6 +122,7 @@ section{
 
 .home-col-1{
 
+  margin-top: -20px;
 margin-left: 30px;
 font-size: 25px;
 }
@@ -193,7 +199,7 @@ form .btn.btn2{
   font-size: 40px;
   font-weight: 600;
 
-  color: var(--text-color);
+  color: var(--main-color)
 }
 
 .tab-titles{
@@ -422,10 +428,13 @@ form .btn.btn2{
   margin-top: 30px;
 }
 
+
+
 .contact-left p i{
 
   color:#FFCB47;
   margin-right: 15px;
+  margin-left: 20px;
   font-size: 25px;
 }
 
@@ -481,11 +490,21 @@ form .btn2{
   cursor: pointer;
 }
 
+
+
 /* -------------Media Queries---------- */
 
-@media only screen and (min-width: 60px ){
+
+#close, #menu{
+  display: none;
+}
+@media (max-width: 1280px ){
 
 
+  #close, #menu{
+    display: block;
+    font-size: 25px;
+  }
 .header-text{
   margin-left: 100px;
 }
@@ -493,4 +512,72 @@ form .btn2{
 .logo{
 width: 150px;
 }
+
+
+nav ul{
+  background:#FFCB47;
+  position: fixed;
+  top: 0;
+  right:-2000px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+
+/* nav ul{
+  margin-left: 2000000px;
+} */
+nav ul li{
+  font-size: 20px;
+  display: block;
+  /* margin-left: 400px; */
+  padding: 2%;
+  margin: 30px;
+}
+
+nav ul #close, #menu{
+  
+  margin-top: 39px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+
+}
+
+#about{
+  margin-left: 50px;
+}
+.sub-title{
+  font-size: 40px;
+}
+
+.about-col-1, .about-col-2{
+  flex-basis: 85%;
+
+}
+
+.about-col-1{
+  margin-bottom: 30px;
+}
+
+.about-col-2{
+  font-size: 14px;
+}
+
+.tab-links{
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.sub-title-Serv{
+  margin-left: 29px;
+}
+
+.contact-left, .contact-right{
+  flex-basis: 100%;
+}
+
 }
