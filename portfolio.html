@@ -29,6 +29,8 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
         <i id = "close" class="fa-sharp fa-regular fa-xmark" onclick="closeMenu()"></i>
+        
+        
     </ul>
     <i  id = "menu" class="fa-solid fa-bars" onclick="openMenu()"></i>
 </nav>
@@ -236,13 +238,15 @@
     <div class="contact-right">
 
 
-      <form>
+      <form name="submit-to-google-sheet">
 
         <input type="text" name = "name" placeholder="Youre Name" required>
         <input type="email" name = "email" placeholder="Youre Email" required>
         <textarea name = "Message" rows = "6" placeholder = "Youre Message"></textarea>
         <button type = "submit" class = "btn btn2">Submit</button>
       </form>
+
+      <span id = "msg"></span>
 </div>
 
 
@@ -287,6 +291,24 @@ function openMenu(){
 function closeMenu(){
   sidemenu.style.right = "-200px";
 }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx6nS_zdtt-uqUglGOR_VMXA6XRjmr9SYlt22to5hlsD5kxXqR8N51XpQtyNJPbBWPomA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message sent sucessfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 
 
