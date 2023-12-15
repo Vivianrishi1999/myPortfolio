@@ -128,9 +128,7 @@ font-size: 25px;
 }
 
 
-.home-col-2{
 
-}
 
 .home-col-2 img{
   margin-right: 10px ;
@@ -498,7 +496,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media (max-width: 1280px ){
+@media (min-width: 1280px ){
 
 
   #close, #menu{
