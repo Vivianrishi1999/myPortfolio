@@ -496,7 +496,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media (min-width: 1280px ){
+@media (max-width: 600px ){
 
 
   #close, #menu{
