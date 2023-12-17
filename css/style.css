@@ -500,7 +500,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media (max-width: 1280px ){
+@media (max-width: 120px ){
 
 
   #close, #menu{
