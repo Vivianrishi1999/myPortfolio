@@ -237,6 +237,10 @@ form .btn.btn2{
   color:var(--main-color);
   font-size: 19px;
 }
+ .tab-contents ul li .skills{
+  color: var(--text-color);
+  font-size: 16px;
+}
 
 .tab-contents{
   display: none;
@@ -496,7 +500,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media (max-width: 600px ){
+@media (max-width: 1280px ){
 
 
   #close, #menu{
