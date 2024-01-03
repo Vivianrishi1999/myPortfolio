@@ -50,15 +50,21 @@ nav{
 }
 
 .logo{
+  margin-left: -0px;
   width: 150px;
   size: 200px;
 
 }
 
+
+nav  ul{
+  color: #FFCB47;
+  margin-left: 230px;
+}
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 20px 20px;
 }
 
 nav ul li a{
@@ -121,19 +127,20 @@ section{
 }
 
 .home-col-1{
-
+  
   margin-top: -20px;
-margin-left: 30px;
-font-size: 25px;
+  margin-left: 30px;
+  font-size: 20px;
 }
 
 
 
 
 .home-col-2 img{
+  margin-top: -120px;
   margin-right: 10px ;
-
- width: 83%;
+  width: 90%;
+  
   border-radius: 15px;
 }
 
@@ -145,7 +152,7 @@ font-size: 25px;
 
  .name{
   color: #FFCB47;
-  font-size: 160%;
+  font-size: 130%;
   margin-left: -4px;
   margin-top: -3px;
 
@@ -161,10 +168,11 @@ font-size: 25px;
  }
 .header-text h2{
 
-  margin-top: 170px;
+  margin-top: 90px;
 }
 
 form .btn.btn2{
+
   color:#EBF2FA;
 }
 
@@ -197,7 +205,8 @@ form .btn.btn2{
   font-size: 40px;
   font-weight: 600;
 
-  color: var(--main-color)
+  color: var(--text-color);
+  padding-bottom: 5px;
 }
 
 .tab-titles{
@@ -262,7 +271,7 @@ form .btn.btn2{
 .sub-title-Serv{
   font-size: 40px;
   font-weight: 600;
-  margin-left: 500px;
+  margin-left: 390px;
   /* margin-bottom: 200px; */
   cursor: pointer;
   position: relative;
@@ -285,7 +294,7 @@ form .btn.btn2{
 
 .services-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -324,9 +333,10 @@ form .btn.btn2{
   transform: translateY(-10px);
 }
 
-
+/* ------Portfolio------ */
 #portfolio{
   padding: 50px 0;
+  margin-bottom: 70px;
 }
 
 .work-list{
@@ -427,7 +437,7 @@ form .btn.btn2{
 }
 
 .contact-left p{
-  margin-top: 30px;
+  margin-top: 900px;
 }
 
 
@@ -441,8 +451,28 @@ form .btn.btn2{
 }
 
 .social-icons{
-  margin-top: 30px;
+  margin-top: -20px;
+  margin-left: 40px;
 }
+
+.social-icons-home{
+  margin-top: -20px;
+  margin-left: 40px;
+}
+
+.social-icons-home a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color:#FFCB47;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons-home a:hover{
+  color:#ffffff;
+  transform: translatey(-5px);
+}
+
 
 .social-icons a{
   text-decoration: none;
@@ -460,6 +490,7 @@ form .btn.btn2{
 }
 
 .btn.btn2{
+ 
   display: inline-block;
   background: #FFCB47;
 }
@@ -500,7 +531,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media (max-width: 1230px ){
+@media (max-width: 600px ){
 
 
   #close, #menu{
@@ -509,9 +540,12 @@ form .btn2{
     font-size: 25px;
   }
 .header-text{
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
+.home-col-2 .img{
+  display: none;
+}
 .logo{
 width: 150px;
 }
@@ -548,6 +582,12 @@ nav ul #close, #menu{
   right: 25px;
   cursor: pointer;
 
+}
+
+.home-col-2 img{
+  margin-top: 30px;
+  margin-left: -60px;
+  width: 100%;
 }
 
 #about{
@@ -590,3 +630,5 @@ nav ul #close, #menu{
   margin-top: -40px;
   display: block;
 }
+
+
