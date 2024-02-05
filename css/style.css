@@ -532,7 +532,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media only screen and (min-width: 412px) and (max-width: 767px ){
+@media only screen and (max-width: 767px ){
 
 
   #close, #menu{
