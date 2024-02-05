@@ -532,7 +532,7 @@ form .btn2{
 #close, #menu{
   display: none;
 }
-@media (max-width: 1080px ){
+@media  (max-width: 450px ){
 
 
   #close, #menu{
@@ -541,7 +541,7 @@ form .btn2{
     font-size: 25px;
   }
 .header-text{
-  margin-left: 68px;
+  margin-left: 39px;
 }
 
 .social-icons-home{
@@ -591,16 +591,21 @@ nav ul #close, #menu{
 }
 
 .home-col-2 img{
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: -60px;
   width: 100%;
 }
 
 #about{
-  margin-left: 70px;
+  margin-top: -50px;
+  margin-left: 40px;
 }
 .sub-title{
   font-size: 40px;
+}
+
+#services{
+  margin-left: 2px;
 }
 
 .about-col-1, .about-col-2{
@@ -625,8 +630,16 @@ nav ul #close, #menu{
   margin-left: 29px;
 }
 
+#contact{
+  margin-top: -40px;
+}
 .contact-left, .contact-right{
   flex-basis: 100%;
+}
+
+
+#portfolio{
+  margin-left: 10px;
 }
 
 }
